@@ -52,6 +52,7 @@ function winner(){
         team2Score.style.color = "red";
         winnerText.textContent = `${team1Name} win with ${score1} points!`
         winnerText.style.display = "block";
+        textHeader.textContent = "Game End!"
         startBtn.disabled = true;
     }
     else if(score2 >= winScore && score1 <= winScore){
