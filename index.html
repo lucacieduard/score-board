@@ -15,42 +15,53 @@
 	</head>
 	<body>
 		<div class="container">
-		<h1 class="welcome-text">Welcome to Score Kepper!</h1>
-		<div class="menu">
-			<div class="team-input">
-				<p>TEAM 1:</p>
-				<input type="text" placeholder="Ex: Barcelona" id="team1_name" required/>
+			<h1 class="welcome-text">Welcome to Score Kepper!</h1>
+			<div class="menu">
+				<div class="team-input">
+					<p>TEAM 1:</p>
+					<input
+						type="text"
+						placeholder="Ex: Barcelona"
+						id="team1_name"
+						required
+					/>
+				</div>
+				<div class="team-input">
+					<p>TEAM 2:</p>
+					<input
+						type="text"
+						placeholder="Ex: Real M"
+						id="team2_name"
+						required
+					/>
+				</div>
+				<div class="team-input">
+					<p>Win Score:</p>
+					<input type="number" min="0" id="win-score" max="100" required />
+				</div>
+				<div class="buttons">
+					<button class="start-btn">Start</button>
+					<button class="reset-btn">Reset</button>
+				</div>
 			</div>
-			<div class="team-input">
-				<p>TEAM 2:</p>
-				<input type="text" placeholder="Ex: Real M" id="team2_name" required/>
+			<div class="card">
+				<div class="team-card">
+					<h2>Team 1</h2>
+					<div class="score" id="scoreteam1">0</div>
+					<button id="team11">+1</button>
+					<button id="team12">+2</button>
+					<button id="team13">+3</button>
+				</div>
+				<div class="team-card">
+					<h2>Team 2</h2>
+					<div class="score" id="scoreteam2">0</div>
+					<button id="team21">+1</button>
+					<button id="team22">+2</button>
+					<button id="team23">+3</button>
+				</div>
 			</div>
-			<div class="team-input">
-				<p>Win Score:</p>
-				<input type="number" min="0"/ id="win-score" max="100" required>
-			</div>
-			<div class="buttons">
-				<button class="start-btn">Start</button>
-				<button class="reset-btn">Reset</button>
-			</div>
+			<h2 class="winner-text">Team 2 win!</h2>
 		</div>
-		<div class="card">
-			<div class="team-card">
-				<h2>Team 1</h2>
-				<div class="score" id="scoreteam1">0</div>
-				<button id="team11">+1</button>
-				<button id="team12">+2</button>
-				<button id="team13">+3</button>
-			</div>
-			<div class="team-card">
-				<h2>Team 2</h2>
-				<div class="score" id="scoreteam2">0</div>
-				<button id="team21">+1</button>
-				<button id="team22">+2</button>
-				<button id="team23">+3</button>
-			</div>
-		</div>
-		<h2 class="winner-text">Team 2 win!</h2></div>
 		<script src="app.js"></script>
 	</body>
 </html>
