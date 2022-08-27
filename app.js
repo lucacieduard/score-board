@@ -64,13 +64,14 @@ function winner(){
     }
 }
 
+
 teamOneBtn1.addEventListener("click",function(){
     if(gameStart === true){
     score1 +=1;
     team1Score.innerText = score1;
-    }
     winner();
-
+    }
+    
     
 })
 
@@ -78,24 +79,27 @@ teamTwoBtn1.addEventListener("click",function(){
     if(gameStart === true){
     score2 +=1;
     team2Score.innerText = score2;
-    }
     winner();
+    }
+    
 })
 
 teamOneBtn2.addEventListener("click",function(){
     if(gameStart === true){
     score1 +=2;
     team1Score.innerText = score1;
-    }
     winner();
+    }
+    
 })
 
 teamTwoBtn2.addEventListener("click",function(){
     if(gameStart === true){
     score2 +=2;
     team2Score.innerText = score2;
-    }
     winner();
+    }
+    
     }
 )
 
@@ -103,16 +107,18 @@ teamOneBtn3.addEventListener("click",function(){
     if(gameStart === true){
     score1 +=3;
     team1Score.innerText = score1;
-    }
     winner();
+    }
+    
 })
 
 teamTwoBtn3.addEventListener("click",function(){
     if(gameStart === true){
     score2 +=3;
     team2Score.innerText = score2;
-    }
     winner();
+    }
+    
 })
 
 
